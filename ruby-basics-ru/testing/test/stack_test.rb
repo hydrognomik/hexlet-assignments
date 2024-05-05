@@ -15,16 +15,24 @@ class StackTest < Minitest::Test
     assert { @stack.to_a.last == 'bar' }
   end
 
-  def test_pop_method
+  def test_that_pop_removes_last_element
     @stack.push! 'bar'
     @stack.push! 'baz'
     @stack.pop!
     assert { @stack.to_a.last == 'bar' }
   end
 
+  def test_that_pop_returns_last_element
+    @stack.push! 'bar'
+    @stack.push! 'baz'
+    val = @stack.pop!
+    assert { val == 'baz' }
+  end
+
   def test_clear_method
     @stack.clear!
     assert { @stack.empty? }
+    assert { @stack.to_a.empty? }
   end
 
   def test_stack_not_empty
