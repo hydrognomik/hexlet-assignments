@@ -1,0 +1,12 @@
+<h1>All Bulletins</h1>
+<%# BEGIN %>
+<ul>
+  <% @bulletins.each do |bulletin| %>
+    <li>
+      <a href="<%= bulletin_path(bulletin) %>">
+        <%= bulletin.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+<%# END %>

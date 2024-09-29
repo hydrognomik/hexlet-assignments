@@ -1,0 +1,17 @@
+bulletin1:
+  id: 1
+  title: 'First Bulletin'
+  body: 'This is the first bulletin'
+  published: true
+
+bulletin2:
+  id: 2
+  title: 'Second Bulletin'
+  body: 'This is the second bulletin'
+  published: true
+
+bulletin3:
+  id: 3
+  title: 'Third Bulletin'
+  body: 'This is the third bulletin'
+  published: false
